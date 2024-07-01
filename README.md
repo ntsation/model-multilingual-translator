@@ -12,7 +12,7 @@ Para configurar o ambiente para este projeto, siga estas etapas:
 
 1. Crie e ative um ambiente virtual:
 
-    ```
+    ```cmd
     python -m venv .venv
     source .venv/bin/activate  # Para Mac/Linux
     .venv\Scripts\activate     # Para Windows
@@ -20,14 +20,15 @@ Para configurar o ambiente para este projeto, siga estas etapas:
 
 2. Instale as dependências do projeto a partir do arquivo requirements.txt:
 
-    ```
+    ```cmd
     pip install -r requirements.txt
     ```
 
 ## Uso
+
 Para executar a aplicação Streamlit, use o comando:
 
-```
+```cmd
 streamlit run main.py
 ```
 
