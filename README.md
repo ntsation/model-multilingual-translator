@@ -1,35 +1,54 @@
-# Tradutor LLM
+# Multilingual Translator
 
-Este projeto é uma aplicação Streamlit para tradução de textos usando modelos de Tradução Automática da Hugging Face, como MarianMTModel. O objetivo é fornecer uma interface simples para tradução de diferentes línguas.
+This is a simple web application built with Streamlit that allows users to translate text between multiple languages using pre-trained models from Hugging Face's Transformers library.
 
-## Pré-requisitos
+## Features
 
-Certifique-se de ter Python instalado no seu sistema. Recomenda-se usar um ambiente virtual para manter as dependências do projeto isoladas de outras instalações do Python.
+- Supports translation between:
+  - English and Spanish
+  - Spanish and English
+  - French and English
+  - English and French
+  - German and English
+  - English and German
+- Saves translations to a text file (`translations.txt`).
+- Logs user actions and errors to a log file (`log.txt`).
+- User feedback on translation usefulness.
 
-## Configuração do Ambiente
+## Requirements
 
-Para configurar o ambiente para este projeto, siga estas etapas:
+To run this application, you need to have Python installed along with the following libraries:
 
-1. Crie e ative um ambiente virtual:
+- Streamlit
+- Transformers
+- Logging
+- Regex
 
-    ```cmd
-    python -m venv .venv
-    source .venv/bin/activate  # Para Mac/Linux
-    .venv\Scripts\activate     # Para Windows
-    ```
+You can install the required packages using pip:
 
-2. Instale as dependências do projeto a partir do arquivo requirements.txt:
-
-    ```cmd
-    pip install -r requirements.txt
-    ```
-
-## Uso
-
-Para executar a aplicação Streamlit, use o comando:
-
-```cmd
-streamlit run main.py
+```bash
+pip install r requirements.txt
 ```
 
-Isso iniciará a aplicação no navegador padrão, onde você poderá carregar textos para tradução e visualizar os resultados.
+## Running the Application
+
+1. Clone this repository or download the script.
+2. Navigate to the directory containing the script.
+3. Run the Streamlit application using the following command:
+
+```bash
+streamlit run translator_app.py
+```
+
+4. Open the URL provided in your terminal (usually `http://localhost:8501`).
+
+## Usage
+
+1. Select the desired translation language from the dropdown menu.
+2. Enter the text you want to translate (up to 500 characters).
+3. Click the "Translate" button.
+4. The translated text will be displayed, and you can choose to save it or provide feedback.
+
+## Logging
+
+The application logs user interactions and any errors that occur during the translation process. You can check `log.txt` for this information.
