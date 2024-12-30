@@ -27,7 +27,7 @@ To run this application, you need to have Python installed along with the follow
 You can install the required packages using pip:
 
 ```bash
-pip install r requirements.txt
+pip install -r config/requirements.txt
 ```
 
 ## Running the Application
@@ -37,7 +37,7 @@ pip install r requirements.txt
 3. Run the Streamlit application using the following command:
 
 ```bash
-streamlit run translator_app.py
+streamlit run main.py
 ```
 
 4. Open the URL provided in your terminal (usually `http://localhost:8501`).

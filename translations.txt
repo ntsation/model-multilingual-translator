@@ -1,0 +1,4 @@
+Language: English to Spanish
+Original Text: Hello, how are you?
+Translated Text: Hola, ¿cómo estás?
+
